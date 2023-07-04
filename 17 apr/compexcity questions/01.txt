@@ -1,0 +1,7 @@
+The time complexity of this code is O(n^2) as it uses nested loops, where the outer loop runs n times and the inner
+loop runs i times where i varies from 1 to n.
+The total number of operations performed can be calculated by summing the total number of operations in each
+iteration of the outer loop. The inner loop will run i times on the i-th iteration of the outer loop. So the number of
+operations is (1+2+3+...+n) which is n(n+1)/2, which is O(n^2).
+One way to improve the time complexity of this code is to use a mathematical formula to find the sum instead of
+using nested loops.

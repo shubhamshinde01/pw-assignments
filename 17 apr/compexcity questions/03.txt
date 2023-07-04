@@ -1,0 +1,14 @@
+Let the solution be T(n) = O(n), now let’s prove this using the induction method.
+For that to happen T(n) <= cn where c is some constant.
+T(n) = T(n - 1) + c
+T(n - 1) = T(n - 2) + c
+T(n - 2) = T(n - 3) + c
+|
+|
+T(2) = T(1) + c
+—------------------------ Adding all above equations
+T(n) = T(1) + cn
+Let us assume T(1) to be a constant value.
+T(n) = k + cn
+Therefore, T(n) <= cn
+Hence we can conclude T(n) = O(n).

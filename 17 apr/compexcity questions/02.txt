@@ -1,0 +1,6 @@
+Substituting the values in the relation:
+T(1) = 3T(0) + 12
+=> T(1) = 15 + 12 = 27
+T(2) = 3T(1) + 12 * 2
+=>T(2) = 3 * 27 + 24 = 81 + 24
+Hence T(2) = 105.

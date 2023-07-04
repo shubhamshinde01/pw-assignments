@@ -1,0 +1,12 @@
+Solution: Fromthegivenrecurrencerelationwecanobtainthevalueofdifferentparameterssuchasa,b,p,and
+k.
+Therelation:T(n)=16T(n/4)+n2logn
+Here,a=16
+b=4
+k=2
+p=1
+bk=42=16
+Herea=bk
+Alsop>-1
+HenceT(n)=θ(nlogab*logp+1n)
+ThereforeT(n)=θ(nlog164*log1+1n)=θ(n1/2log2n)
