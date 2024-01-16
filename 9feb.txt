@@ -1,0 +1,119 @@
+1.
+**Encapsulation:**
+Encapsulation is a fundamental concept in object-oriented programming (OOP) that involves bundling the data (attributes) and methods (functions) that operate on the data into a single unit, typically a class. This concept helps in hiding the internal details of an object and exposing only what is necessary for the outside world to interact with.
+
+**Why it's called Data Hiding:**
+Encapsulation is often referred to as "data hiding" because it restricts access to the internal state of an object, keeping the details hidden from the external code. This allows for a more secure and controlled way of interacting with objects, as the implementation details are encapsulated within the class. Changes to the internal structure of the object can be made without affecting the code that uses the object, promoting a clear separation between the implementation and the interface.
+
+2.
+**Features of Encapsulation:**
+1. **Data Hiding:** Encapsulation hides the internal details and state of an object, preventing direct access to its implementation details.
+
+2. **Access Control:** Encapsulation allows for controlling access to the internal components of a class, specifying which methods or fields are visible or accessible from outside the class.
+
+3. **Modularity:** It promotes modularity by bundling related data and methods into a single unit (class), making the code more organized and easier to understand.
+
+4. **Security:** By hiding implementation details, encapsulation enhances security by preventing unauthorized access and manipulation of an object's internal state.
+
+5. **Flexibility:** Encapsulation allows for changes to the internal implementation of a class without affecting the external code that uses the class, promoting flexibility and easier maintenance.
+
+6. **Code Reusability:** It facilitates code reuse as objects with encapsulated behavior can be easily reused in different parts of a program or in other projects.
+
+
+3.
+**Getter and Setter in Java:**
+In Java, getter and setter methods are used to access and modify the private fields (attributes) of a class, promoting encapsulation and controlled access to the class's internal state.
+
+**Example:**
+```java
+public class Person {
+    private String name; // Private field
+
+    // Getter method to retrieve the value of the private field
+    public String getName() {
+        return name;
+    }
+
+    // Setter method to set the value of the private field
+    public void setName(String newName) {
+        this.name = newName;
+    }
+}
+
+// Usage example:
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person();
+        
+        // Set the name using the setter
+        person.setName("John Doe");
+        
+        // Get the name using the getter
+        String retrievedName = person.getName();
+        
+        System.out.println("Person's name: " + retrievedName);
+    }
+
+
+4.
+**Use of "this" Keyword in Java:**
+The "this" keyword in Java is used to refer to the current instance of the class. It is often used to differentiate between instance variables and parameters with the same name, and to invoke methods or access fields within the class.
+
+**Example:**
+```java
+public class Student {
+    private String name;
+
+    // Constructor using "this" to differentiate between instance variable and parameter
+    public Student(String name) {
+        this.name = name;
+    }
+
+    // Method using "this" to invoke another method
+    public void displayDetails() {
+        printName();
+    }
+
+    private void printName() {
+        System.out.println("Student name: " + this.name);
+    }
+}
+
+// Usage example:
+public class Main {
+    public static void main(String[] args) {
+        Student student = new Student("Alice");
+        
+        // Using "this" in the displayDetails method
+        student.displayDetails();
+    }
+
+
+5.
+public class Person {
+    // Private instance variables
+    private String name;
+    private int age;
+
+    // Getter methods for private variables
+    public String getName() {
+        return name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    // Setter methods for private variables
+    public void setName(String name) {
+        // Additional validation or logic can be added here
+        this.name = name;
+    }
+
+    public void setAge(int age) {
+        // Additional validation or logic can be added here
+        this.age = age;
+    }
+}
+
+
